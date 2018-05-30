@@ -19,3 +19,16 @@ Callable -
 
             Callable interface has a single method call()
             which is meant to contain the code that is executed by a thread.
+
+ReentrantLock -
+            ReentrantLock is a mutually exclusive lock with the same behavior
+            as the intrinsic/implicit lock accessed via the synchronized keyword.
+
+            ReentrantLock, as the name suggests, possesses reentrant characteristics.
+            That means a thread that currently owns the lock can acquire it
+            more than once without any problem.
+
+ReadWriteLock
+            ReadWriteLock consists of a pair of locks - one for read access and one for write access.
+            The read lock may be held by multiple threads simultaneously as long as
+            the write lock is not held by any thread.
